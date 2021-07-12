@@ -356,7 +356,7 @@ module.exports = function() {
             var connected = false;
             conn.on('ready', function() {
                 delete options.password;
-                log.info('Connecting to rabbitMQ server OK, options:', options);
+                log.info('PFE023 - Connecting to rabbitMQ server OK, options:', options);
                 connection = conn;
 
                 // The 'ready' event will be triggered each time
