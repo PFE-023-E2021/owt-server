@@ -104,7 +104,7 @@ bool HEVCTilesMerger::init(const FrameHevcTiles& tilesFrame)
     m_360scvp_param.frameWidthLow = tilesFrame.low_width;
     m_360scvp_param.frameHeightLow = tilesFrame.low_height;
 
-    m_360scvp_param.paramViewPort.geoTypeInput = EGeometryType(E_SVIDEO_EQUIRECT);
+    m_360scvp_param.paramViewPort.geoTypeInput = EGeometryType(E_SVIDEO_CUBEMAP);
     m_360scvp_param.paramViewPort.geoTypeOutput = E_SVIDEO_VIEWPORT;
     m_360scvp_param.paramViewPort.faceWidth = m_360scvp_param.frameWidth;
     m_360scvp_param.paramViewPort.faceHeight = m_360scvp_param.frameHeight;
